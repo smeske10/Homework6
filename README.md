@@ -6,7 +6,8 @@
 - created javascript to pull data from API call and place it in HTML Element
 - Backlog: Icon won't show with iconify api, 5-day forecast isn't displaying properly, Buttons were working, now there is a bug
 
-
+Github: https://github.com/smeske10/Homework6
+Site: https://smeske10.github.io/Homework6/
 
 
 
