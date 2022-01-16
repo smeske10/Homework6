@@ -41,3 +41,43 @@ body {
 .card-body {
     padding: 0;
 }
+
+.forecast {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+}
+
+#icon {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+#day1 {
+    width: 150px;
+    height: 300px;
+    margin-right: 10px;
+}
+#day2 {
+    width: 150px;
+    height: 300px;
+    margin-right: 10px;
+}
+#day3 {
+    width: 150px;
+    height: 300px;
+    margin-right: 10px;
+}
+#day4 {
+    width: 150px;
+    height: 300px;
+    margin-right: 10px;
+}
+#day5 {
+    width: 150px;
+    height: 300px
+}

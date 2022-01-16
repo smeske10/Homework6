@@ -1,3 +1,16 @@
+- Created Navbar
+- Created left column for search + searchHistory
+- Created right column with 2 divs for current weather and forecast
+- Created 5 cards for 5-day forecast
+- Created javascript to get weather from openweathermap API
+- created javascript to pull data from API call and place it in HTML Element
+- Backlog: Icon won't show with iconify api, 5-day forecast isn't displaying properly, Buttons were working, now there is a bug
+
+
+
+
+
+
 # Homework6
  Server Side APIs
 

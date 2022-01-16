@@ -34,31 +34,52 @@
                 </div>
                 <!-- Search history -->
                 <div id="history">
-                    
                 </div>
             </div>
             <!-- Right column -->
-            <div class="column right d-block my-3">
+            <div class="column right">
                 <!-- Current Weather card -->
-                <div class="card border p-2">
-                    <h2 id="city"></h2>
-                    <p id="temp">Temp: </p>
-                    <p id="wind">Wind: </p>
-                    <p id="humidity">Humidity: </p>
-                    <p id="uv">UV Index</p>
+                <div>  
+                    <div class="card border p-2">
+                        <h2 id="city"></h2>
+                        <p id="temp" style="font-weight: bold;">Temp: </p>
+                        <p id="wind" style="font-weight: bold;">Wind: </p>
+                        <p id="humidity" style="font-weight: bold;">Humidity: </p>
+                        <p id="uv" style="font-weight: bold;">UV Index: </p>
+                    </div>  
+                    <div id="icon">
+                        <span class="iconify"></span>
+                    </div>
                 </div>
                 <!-- Forecast card  -->
-                <div class="col ">
+                <div class="col">
                     <h3 class="my-3" id="forecast">5-Day Forecast: </h3>
-                    <div class="card" id="day1">
-                    </div>
-                    <div class="card" id="day2">
-                    </div>
-                    <div class="card" id="day3">
-                    </div>
-                    <div class="card" id="day4">
-                    </div>
-                    <div class="card" id="day5">
+                    <div class="forecast">
+                        <div class="card" id="day1" style="background-color: #3b4efd; color: white;">
+                            <p id="tempForecast" style="font-weight: bold;">Temp: </p>
+                            <p id="windForecast" style="font-weight: bold;">Wind: </p>
+                            <p id="humidityForecast" style="font-weight: bold;">Humidity: </p>
+                        </div>
+                        <div class="card" id="day2" style="background-color: #3b4efd; color: white;">
+                            <p id="tempForecast" style="font-weight: bold;">Temp: </p>
+                            <p id="windForecast" style="font-weight: bold;">Wind: </p>
+                            <p id="humidityForecast" style="font-weight: bold;">Humidity: </p>
+                        </div>
+                        <div class="card" id="day3" style="background-color: #3b4efd; color: white;">
+                            <p id="tempForecast" style="font-weight: bold;">Temp: </p>
+                            <p id="windForecast" style="font-weight: bold;">Wind: </p>
+                            <p id="humidityForecast" style="font-weight: bold;">Humidity: </p>
+                        </div>
+                        <div class="card" id="day4" style="background-color: #3b4efd; color: white;">
+                            <p id="tempForecast" style="font-weight: bold;">Temp: </p>
+                            <p id="windForecast" style="font-weight: bold;">Wind: </p>
+                            <p id="humidityForecast" style="font-weight: bold;">Humidity: </p>
+                        </div>
+                        <div class="card" id="day5" style="background-color: #3b4efd; color: white;">
+                            <p id="tempForecast" style="font-weight: bold;">Temp: </p>
+                            <p id="windForecast" style="font-weight: bold;">Wind: </p>
+                            <p id="humidityForecast" style="font-weight: bold;">Humidity: </p>
+                        </div>
                     </div>
                 </div>    
             </div>
@@ -67,5 +88,8 @@
     <script src="./assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
 </body>
 </html>
