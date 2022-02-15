@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba7fa5da55.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
     <header class="bg-header py-2">
         <div class="text-center">
             <h1 style="color: white; font-weight: bold;">Weather Dashboard</h1>
-        </nav>
+            </nav>
     </header>
 
     <main class="container-fluid">
@@ -25,12 +27,13 @@
                 <!-- Search by City -->
                 <div class="border-bottom">
                     <h3>Search for a City:</h2>
-                    <form id="user-form" class="card-body">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="search" placeholder="Philadelphia, PA" aria-label="search">
-                        </div>
-                        <button type="button" class="searchBtn btn-primary">Search</button>
-                    </form>
+                        <form id="user-form" class="card-body">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="search" placeholder="Philadelphia, PA"
+                                    aria-label="search">
+                            </div>
+                            <button type="button" class="searchBtn btn-primary">Search</button>
+                        </form>
                 </div>
                 <!-- Search history -->
                 <div id="history">
@@ -39,14 +42,14 @@
             <!-- Right column -->
             <div class="column right">
                 <!-- Current Weather card -->
-                <div>  
+                <div class="currentWeather">
                     <div class="card border p-2">
                         <h2 id="city"></h2>
                         <p id="temp" style="font-weight: bold;">Temp: </p>
                         <p id="wind" style="font-weight: bold;">Wind: </p>
                         <p id="humidity" style="font-weight: bold;">Humidity: </p>
                         <p id="uv" style="font-weight: bold;">UV Index: </p>
-                    </div>  
+                    </div>
                     <div id="icon">
                         <span class="iconify"></span>
                     </div>
@@ -56,32 +59,62 @@
                     <h3 class="my-3" id="forecast">5-Day Forecast: </h3>
                     <div class="forecast">
                         <div class="card" id="day1" style="background-color: #3b4efd; color: white;">
-                            <p id="tempForecast" style="font-weight: bold;">Temp: </p>
-                            <p id="windForecast" style="font-weight: bold;">Wind: </p>
-                            <p id="humidityForecast" style="font-weight: bold;">Humidity: </p>
+                            <div class="card-header">
+                                <p id="dateForecast1" style="font-weight: bold;">Date: </p>
+                            </div>
+                            <section class="forecast-body">
+                                <i id="weatherIcon1"></i>
+                                <p id="tempForecast1" style="font-weight: bold;">Temp: </p>
+                                <p id="windForecast1" style="font-weight: bold;">Wind: </p>
+                                <p id="humidityForecast1" style="font-weight: bold;">Humidity: </p>
+                            </section>
                         </div>
                         <div class="card" id="day2" style="background-color: #3b4efd; color: white;">
-                            <p id="tempForecast" style="font-weight: bold;">Temp: </p>
-                            <p id="windForecast" style="font-weight: bold;">Wind: </p>
-                            <p id="humidityForecast" style="font-weight: bold;">Humidity: </p>
+                            <div class="card-header">
+                                <p id="dateForecast2" style="font-weight: bold;">Date: </p>
+                            </div>
+                            <section class="forecast-body">
+                                <i id="weatherIcon2"></i>
+                                <p id="tempForecast2" style="font-weight: bold;">Temp: </p>
+                                <p id="windForecast2" style="font-weight: bold;">Wind: </p>
+                                <p id="humidityForecast2" style="font-weight: bold;">Humidity: </p>
+                            </section>
                         </div>
                         <div class="card" id="day3" style="background-color: #3b4efd; color: white;">
-                            <p id="tempForecast" style="font-weight: bold;">Temp: </p>
-                            <p id="windForecast" style="font-weight: bold;">Wind: </p>
-                            <p id="humidityForecast" style="font-weight: bold;">Humidity: </p>
+                            <div class="card-header">
+                                <p id="dateForecast3" style="font-weight: bold;">Date: </p>
+                            </div>
+                            <section class="forecast-body">
+                                <i id="weatherIcon3"></i>
+                                <p id="tempForecast3" style="font-weight: bold;">Temp: </p>
+                                <p id="windForecast3" style="font-weight: bold;">Wind: </p>
+                                <p id="humidityForecast3" style="font-weight: bold;">Humidity: </p>
+                            </section>
                         </div>
                         <div class="card" id="day4" style="background-color: #3b4efd; color: white;">
-                            <p id="tempForecast" style="font-weight: bold;">Temp: </p>
-                            <p id="windForecast" style="font-weight: bold;">Wind: </p>
-                            <p id="humidityForecast" style="font-weight: bold;">Humidity: </p>
+                            <div class="card-header">
+                                <p id="dateForecast4" style="font-weight: bold;">Date: </p>
+                            </div>
+                            <section class="forecast-body">
+                                <i id="weatherIcon4"></i>
+                                <p id="tempForecast4" style="font-weight: bold;">Temp: </p>
+                                <p id="windForecast4" style="font-weight: bold;">Wind: </p>
+                                <p id="humidityForecast4" style="font-weight: bold;">Humidity: </p>
+                            </section>
                         </div>
                         <div class="card" id="day5" style="background-color: #3b4efd; color: white;">
-                            <p id="tempForecast" style="font-weight: bold;">Temp: </p>
-                            <p id="windForecast" style="font-weight: bold;">Wind: </p>
-                            <p id="humidityForecast" style="font-weight: bold;">Humidity: </p>
+                            <div class="card-header">
+                                <p id="dateForecast5" style="font-weight: bold;">Date: </p>
+                            </div>
+                            <section class="forecast-body">
+                                <i id="weatherIcon5"></i>
+                                <p id="tempForecast5" style="font-weight: bold;">Temp: </p>
+                                <p id="windForecast5" style="font-weight: bold;">Wind: </p>
+                                <p id="humidityForecast5" style="font-weight: bold;">Humidity: </p>
+                            </section>
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </main>
@@ -90,6 +123,6 @@
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
 </body>
+
 </html>

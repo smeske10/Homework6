@@ -17,6 +17,10 @@ body {
     max-width: 100%;
 }
 
+.container-fluid {
+    margin: 0 6rem
+}
+
 .column {
     float: left;
 }
@@ -27,7 +31,7 @@ body {
 }
   
 .right {
-    width: 70%;
+    width: 50%;
     margin: 5px;
 }
 
@@ -36,6 +40,23 @@ body {
     margin: 10px 0;
     padding: 5px;
     border-radius: 5px;
+}
+
+.historySearchBtn {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card-header {
+    background-color: #20135e;
+    text-align: center;
+    padding: 0;
+}
+
+.currentWeather {
+    padding-left: 1rem;
 }
 
 .card-body {
@@ -49,12 +70,20 @@ body {
     margin: 5px;
 }
 
-#icon {
-    position: absolute;
-    top: 100px;
-    right: 50px;
-    width: 100px;
-    height: 100px;
+.forecast-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+#weatherIcon1,
+#weatherIcon2,
+#weatherIcon3,
+#weatherIcon4,
+#weatherIcon5 {
+    text-align: center;
 }
 
 #day1 {
